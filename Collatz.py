@@ -9,11 +9,14 @@
 def collatzSeq(n, outputSeq = None):
     if outputSeq is None:
         outputSeq = []
+
     outputSeq.append(int(n))
+
     while (n != 1):
         if (n % 2 == 0):
             return collatzSeq(n / 2, outputSeq)
         else:
             return collatzSeq(n * 3 + 1, outputSeq)
+
     return outputSeq
 
