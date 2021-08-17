@@ -7,6 +7,13 @@
 # source: https://en.wikipedia.org/wiki/Collatz_conjecture
 
 def collatzSeq(n, outputSeq = None):
+    """
+    collatzSeq(int, list) -> list
+    accepts two inputs:
+    - n (required): the integer against which the conjecture is about to be tested
+    - outputSeq (optional): only used during ricursion to store the state of the current test
+    """
+
     if outputSeq is None:
         outputSeq = []
 
